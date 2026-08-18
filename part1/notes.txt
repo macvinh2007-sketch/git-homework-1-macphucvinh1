@@ -1,0 +1,3 @@
+Line 1: This is a new note.
+Line 2: Git is powerful.
+Line 3: I am learning version control.
