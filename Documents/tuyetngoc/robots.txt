@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://tuyetngoc.com/sitemap.xml
+
+# Prevent crawling of unnecessary files
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /images/
+
+Crawl-delay: 1
