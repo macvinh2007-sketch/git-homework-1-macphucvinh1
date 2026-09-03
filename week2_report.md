@@ -76,4 +76,4 @@ git commit -m "Add rebase explanation in week2.md"
 git push origin master
 git add week2.md
 git commit -m "Add rebase explanation in week2.md"
-git push origin master
+git push origin master.
