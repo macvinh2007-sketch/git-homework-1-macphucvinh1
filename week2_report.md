@@ -35,7 +35,7 @@ git brand --no-merged
 3.
 git branch -d week2b
 git branch -m wip work-in-progress
-git remote add origin https://github.com/NgocHein/git-homewor-1-NgocHein
+git remote add origin (https://github.com/macvinh2007-sketch/git-homework-1-macphucvinh1)
 git push -u origin work-in-progress
 Part C
 1.
