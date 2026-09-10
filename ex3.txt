@@ -1,0 +1,49 @@
+# ==========================================
+# PART A: Directory & File Operations
+# ==========================================
+cd ~
+mkdir ex3
+cd ex3
+mkdir dir1 dir2
+touch HelloWorld.txt
+cp HelloWorld.txt dir1/
+cp -i HelloWorld.txt dir1/
+mv HelloWorld.txt Hi.txt
+mv Hi.txt dir2/
+
+# ==========================================
+# PART B: Hard Links, Symbolic Links & Inodes
+# ==========================================
+export MSYS=winsymlinks:nativestrict
+ln dir2/Hi.txt Hi-hard
+ln dir2/Hi.txt dir1/Hi-hard
+ln dir2/Hi.txt dir2/Hi-hard
+ln -s dir2/Hi.txt Hi-sym
+rm Hi-hard
+rm dir2/Hi.txt
+ls -li
+ls -li dir1 dir2
+
+# ==========================================
+# PART C: Text Processing & Pipelines
+# ==========================================
+ls /bin /usr/bin | sort -u | wc -l
+ls /bin /usr/bin | sort -u | grep "zip"
+seq 1 35 > sample.txt
+head -n 5 sample.txt
+tail -n 5 sample.txt
+wc sample.txt
+ls -la | tee full_listing.txt
+
+# ==========================================
+# PART D: File Permissions & Umask
+# ==========================================
+mkdir permissions
+cd permissions
+touch secret.txt shared.txt public.txt
+chmod 600 secret.txt
+chmod 664 shared.txt
+chmod 777 public.txt
+umask
+touch testfile.txt
+ls -l testfile.txt
